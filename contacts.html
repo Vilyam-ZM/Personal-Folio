@@ -27,9 +27,9 @@
             </div>
 
             <nav class="header-nav">
-              <a href="index.html" class="header-nav-link activ">Home</a>
+              <a href="index.html" class="header-nav-link">Home</a>
               <a href="about.html" class="header-nav-link">About me</a>
-              <a href="contacts.html" class="header-nav-link">Contacts</a>
+              <a href="contacts.html" class="header-nav-link activ">Contacts</a>
             </nav>
           </div>
         </div>
@@ -41,22 +41,57 @@
       <div class="conteiner">
         <main class="content">
           <div class="content-header">
-            <h2 class="subtitle">My name is</h2>
             <h1 class="title">
-              Vilyam Zaytsev and I’m
-              <span class="text-blue">Web Developer</span>
+              Write me a <span class="text-blue">message</span>
             </h1>
+            <div class="text">
+              <p>
+                Many desktop publishing packages and web page editors now use
+                Lorem
+              </p>
+            </div>
           </div>
-          <div class="text">
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using ‘Content here,
-              content here’, making it look like
-            </p>
-          </div>
-          <a class="btn" href="#">Contact Me</a>
+
+          <form class="form" action="/" method="post">
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="tel"
+                name="tel"
+                placeholder="Phone"
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                class="textarea"
+                name="text"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-full" type="submit">Send message</button>
+            </div>
+          </form>
         </main>
 
         <!--=====Footer=====-->

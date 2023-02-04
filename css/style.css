@@ -113,6 +113,10 @@ p {
   width: 600px;
 }
 
+.content-header {
+  margin-bottom: 35px;
+}
+
 .subtitle {
   font-size: 1.4rem;
   font-weight: 300;
@@ -120,7 +124,7 @@ p {
 }
 
 .title {
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 
   font-size: 2rem;
   font-weight: 500;
@@ -133,7 +137,7 @@ p {
 }
 
 .text {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   font-size: 1rem;
   color: #fff;
 }
@@ -144,12 +148,15 @@ p {
   display: inline-block;
   padding: 12px 35px;
 
+  font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
   color: #fff;
   text-decoration: none;
 
+  cursor: pointer;
+  border: none;
   background-color: #2b7ded;
   border-radius: 5px;
 
@@ -158,6 +165,11 @@ p {
 
 .btn:hover {
   background-color: #185ebe;
+}
+
+.btn-full {
+  display: block;
+  width: 100%;
 }
 
 /*=====author=====*/
@@ -219,4 +231,41 @@ p {
 
 .contacts-img {
   margin-right: 10px;
+}
+
+/*=====form=====*/
+
+.form {
+  width: 100%;
+  max-width: 280px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input,
+.textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-input::placeholder,
+.textarea::placeholder {
+  font-weight: 500;
+  color: #fff;
 }
